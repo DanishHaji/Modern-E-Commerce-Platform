@@ -20,6 +20,8 @@ model User {
   password      String?
   emailVerified DateTime?
   image         String?
+  accounts      Account[]
+  sessions      Session[]
   role          Role       @default(USER)
   orders        Order[]
   cartItems     CartItem[] // ← Add this line
